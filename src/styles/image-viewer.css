@@ -1,0 +1,17 @@
+.unsplash_stats{
+    display: inline-grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.image_viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .image_viewer {
+        display: flex;
+        flex-direction: column;
+    }
+}
