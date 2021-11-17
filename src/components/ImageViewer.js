@@ -39,7 +39,7 @@ export default function ImageViewer({ open, setOpen, image }) {
           <div className="image_viewer">
             <img loading="lazy" src={image.urls.raw} alt={image.id} style={{ height: '100%', width: '100%', objectFit: 'contain', maxWidth: 500, maxHeight: 500, borderRadius: 10, marginRight: 20 }} />
 
-            <div style={{ width: '100%', flex: 1, overflowY: 'scroll' }}>
+            <div style={{ width: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <Avatar alt={image.user.username} src={image.user.profile_image.small} />
                 <h2 style={{ marginLeft: 10 }} >{image.user.username}</h2>
